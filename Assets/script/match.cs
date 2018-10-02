@@ -10,6 +10,7 @@ public class match : MonoBehaviour {
 	 * 
 	 */
 	GameObject countobj;
+	GameObject sender;
 	GameObject mogura;
 
 	public void main() {
@@ -56,8 +57,11 @@ public class match : MonoBehaviour {
 		/*
 		 *時間経過後にシーンの遷移を行う 
 		**/
-		if (Time.timeSinceLevelLoad > 2.0f){
-
+		if (Time.timeSinceLevelLoad > 100.0f){
+//			gameobject.GetComponent<match>().();
+			sender = GameObject.Find ("dont_death");
+			send_point sp = sender.GetComponent<send_point>();
+			sp.init ();
 			SceneManager.LoadScene ("result", LoadSceneMode.Single);
 
 		}

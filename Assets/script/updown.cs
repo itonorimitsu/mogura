@@ -7,8 +7,13 @@ public class updown : MonoBehaviour {
 	GameObject score;
 
 	public void up(){
-		StartCoroutine ("UpMethod");
-		Invoke ("timeout", 2.0f);
+		if (this.transform.position.y <= 0) {
+			Vector3 pos = this.transform.position;
+			pos.y += 1;
+			this.transform.position = pos;
+			StartCoroutine ("UpMethod");
+			Invoke ("timeout", 2.0f);
+		}
 	}
 
 	public void down(){
@@ -33,7 +38,7 @@ public class updown : MonoBehaviour {
 	}
 
 	private IEnumerator DownMethod(){
-		for (int i = 0; i < 12; i++) {
+		for (int i = 0; i < 13; i++) {
 			this.transform.position += new Vector3 (0, -1, 0);
 			yield return null;
 //			Debug.Log ("down");

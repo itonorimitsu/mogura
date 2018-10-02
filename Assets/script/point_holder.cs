@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class point_holder : MonoBehaviour {
 
-	private int points;
+	public int points;
 	public Text scoretext;
 
 	// Use this for initialization
@@ -13,10 +13,6 @@ public class point_holder : MonoBehaviour {
 		points = 0;
 		scoretext.text = "";
 	}
-
-//	void Awake () {
-//		DontDestroyOnLoad(this);
-//	}
 
 	public void attack_success(){
 		points += 5;

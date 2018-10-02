@@ -18,7 +18,7 @@ public class countdown : MonoBehaviour {
 		match m = croutine.GetComponent<match> ();
 		for (int i = 3; i > 0; i--) {
 			count.text = i.ToString ();
-			yield return new WaitForSeconds (1.5f);
+			yield return new WaitForSeconds (1.1f);
 		}
 		count.text = "start";
 		m.end_croutine ();

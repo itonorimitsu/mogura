@@ -1,14 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/match.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/result.cs">
     <Files>
-      <File FileName="Assets/script/mousetest.cs" Line="29" Column="43" />
+      <File FileName="Assets/script/send_point.cs" Line="35" Column="3" />
+      <File FileName="Assets/script/match.cs" Line="60" Column="35" />
+      <File FileName="Assets/script/mousetest.cs" Line="26" Column="58" />
+      <File FileName="Assets/script/point_holder.cs" Line="1" Column="1" />
       <File FileName="Assets/script/updown.cs" Line="20" Column="4" NotebookId="1" />
-      <File FileName="Assets/script/match.cs" Line="13" Column="3" NotebookId="1" />
-      <File FileName="Assets/script/point_holder.cs" Line="20" Column="3" NotebookId="1" />
-      <File FileName="Assets/script/countdown.cs" Line="20" Column="24" NotebookId="1" />
-      <File FileName="Assets/script/mogura_controll.cs" Line="47" Column="38" NotebookId="1" />
-      <File FileName="Assets/script/miss_shot.cs" Line="17" Column="1" NotebookId="1" />
+      <File FileName="Assets/script/countdown.cs" Line="5" Column="1" NotebookId="1" />
+      <File FileName="Assets/script/mogura_controll.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/script/miss_shot.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/script/result.cs" Line="23" Column="39" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

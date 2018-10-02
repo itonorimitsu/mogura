@@ -58,7 +58,9 @@
      <Compile Include="Assets\script\mousetest.cs" />
      <Compile Include="Assets\script\playgame.cs" />
      <Compile Include="Assets\script\point_holder.cs" />
-     <Compile Include="Assets\script\result.cs" />
+     <Compile Include="Assets\script\result1.cs" />
+     <Compile Include="Assets\script\result2.cs" />
+     <Compile Include="Assets\script\send_point.cs" />
      <Compile Include="Assets\script\start.cs" />
      <Compile Include="Assets\script\updown.cs" />
  <Reference Include="UnityEngine.UI">
