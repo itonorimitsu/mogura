@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/mogura.unity
+- path: Assets/result.unity
   isLoaded: 1
   isActive: 1
