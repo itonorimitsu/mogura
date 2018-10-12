@@ -57,7 +57,7 @@ public class match : MonoBehaviour {
 		/*
 		 *時間経過後にシーンの遷移を行う 
 		**/
-		if (Time.timeSinceLevelLoad > 100.0f){
+		if (Time.timeSinceLevelLoad > 20.0f){
 //			gameobject.GetComponent<match>().();
 			sender = GameObject.Find ("dont_death");
 			send_point sp = sender.GetComponent<send_point>();
