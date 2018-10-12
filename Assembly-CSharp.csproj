@@ -73,6 +73,9 @@
     <Compile Include="Assets\script\send_point.cs" />
     <Compile Include="Assets\script\start.cs" />
     <Compile Include="Assets\script\updown.cs" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>/Users/itonorimitsu/git/mogura/mogura/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/itonorimitsu/git/mogura/mogura/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -81,9 +84,6 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/itonorimitsu/git/mogura/mogura/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/itonorimitsu/git/mogura/mogura/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.2.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
