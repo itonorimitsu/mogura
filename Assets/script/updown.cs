@@ -6,17 +6,23 @@ public class updown : MonoBehaviour {
 
 	GameObject score;
 
+	const int minPoint = -11; // 下限が-12でした
+	const int maxPoint = 1; //上限が1でした
+
 	public void up(){
-		if (this.transform.position.y <= 0) {
-			Vector3 pos = this.transform.position;
-			pos.y += 1;
-			this.transform.position = pos;
-			StartCoroutine ("UpMethod");
-			Invoke ("timeout", 2.0f);
-		}
+		// if (this.transform.position.y <= 0) {
+		// 	Vector3 pos = this.transform.position;
+		// 	pos.y += 1;
+		// 	this.transform.position = pos;
+		GetComponent<CapsuleCollider>().enabled = true;
+		StartCoroutine ("UpMethod");
+		Invoke ("timeout", 3.0f);
+		// }
 	}
 
 	public void down(){
+		GetComponent<CapsuleCollider>().enabled = false;
+		CancelInvoke();
 		StartCoroutine ("DownMethod");
 	}
 
@@ -30,18 +36,18 @@ public class updown : MonoBehaviour {
 	}
 
 	private IEnumerator UpMethod(){
-		for (int i = 0; i < 4; i++) {
+		while(this.transform.position.y < maxPoint){
 			this.transform.position += new Vector3 (0, 3, 0);
 			yield return null;
-//			Debug.Log ("up");
+			// Debug.Log ("up");
 		}
 	}
 
 	private IEnumerator DownMethod(){
-		for (int i = 0; i < 13; i++) {
+		while(this.transform.position.y >= minPoint) {
 			this.transform.position += new Vector3 (0, -1, 0);
 			yield return null;
-//			Debug.Log ("down");
+			// Debug.Log ("down");
 		}
 	}
 }

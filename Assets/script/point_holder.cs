@@ -17,19 +17,19 @@ public class point_holder : MonoBehaviour {
 	public void attack_success(){
 		points += 5;
 		scoretext.text = points.ToString();
-		Debug.Log ("success");
+		// Debug.Log ("success");
 	}
 
 	public void attack_miss(){
 		points -= 10;
 		scoretext.text = points.ToString ();
-		Debug.Log ("attack_false");
+		// Debug.Log ("attack_false");
 	}
 
 	public void miss_target(){
 		points += 5;
 		scoretext.text = points.ToString ();
-		Debug.Log ("miss");
+		// Debug.Log ("miss");
 	}
 
 	public int get_point(){ //結果表示のためにポイントを返す

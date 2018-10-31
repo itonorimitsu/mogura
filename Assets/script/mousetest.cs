@@ -21,18 +21,17 @@ public class mousetest : MonoBehaviour
 //	}
 
 	public void OnClicked(){
-		Debug.Log ("クリックされた");
-		Invoke ("hit", 0.2f);//ここで待ってるのはマテリアル変更を見せるのと、待つため。
+		// Debug.Log ("クリックされた");
+		Invoke ("hit", 0.0f);//ここで待ってるのはマテリアル変更を見せるのと、待つため。
 		score = GameObject.Find ("player1_point"); //ここでマテリアルを変更させる
 		point_holder p1 = score.GetComponent<point_holder>();
 		p1.attack_success ();
 	}
-	//		countobj = GameObject.Find ("countdown");
-	//		countdown c1 = countobj.GetComponent<countdown>();
-	//		c1.main ();
 
 	void hit(){
 		updown ud = GetComponent<updown>();
 		ud.down ();
+		var eventSystem = GameObject.FindObjectOfType<EventSystem> ();
+		eventSystem.enabled = false;
 	}
 }

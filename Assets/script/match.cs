@@ -28,25 +28,25 @@ public class match : MonoBehaviour {
 		mogura = GameObject.Find ("moles");
 		mogura_controll m = mogura.GetComponent<mogura_controll> ();
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			Debug.Log ("1");
+			// Debug.Log ("1");
 			m.num_receive (1);
 		} else if (Input.GetKeyDown (KeyCode.Alpha2)) {
-			Debug.Log ("2");
+			// Debug.Log ("2");
 			m.num_receive (2);
 		} else if (Input.GetKeyDown (KeyCode.Alpha3)) {
-			Debug.Log ("3");
+			// Debug.Log ("3");
 			m.num_receive (3);
 		} else if (Input.GetKeyDown (KeyCode.Alpha4)) {
-			Debug.Log ("4");
+			// Debug.Log ("4");
 			m.num_receive (4);
 		} else if (Input.GetKeyDown (KeyCode.Alpha5)) {
-			Debug.Log ("5");
+			// Debug.Log ("5");
 			m.num_receive (5);
 		} else if (Input.GetKeyDown (KeyCode.Alpha6)) {
-			Debug.Log ("6");
+			// Debug.Log ("6");
 			m.num_receive (6);
 		} else if (Input.GetKeyDown (KeyCode.Alpha7)) {
-			Debug.Log ("7");
+			// Debug.Log ("7");
 			m.num_receive (7);
 		} else if (Input.GetKeyDown (KeyCode.E)) {
 			Debug.Log ("end game");
@@ -57,14 +57,16 @@ public class match : MonoBehaviour {
 		/*
 		 *時間経過後にシーンの遷移を行う 
 		**/
-		if (Time.timeSinceLevelLoad > 20.0f){
-//			gameobject.GetComponent<match>().();
-			sender = GameObject.Find ("dont_death");
-			send_point sp = sender.GetComponent<send_point>();
-			sp.init ();
-			SceneManager.LoadScene ("result", LoadSceneMode.Single);
+// 		if (Time.timeSinceLevelLoad > 20.0f){
+// //			gameobject.GetComponent<match>().();
+// 			sender = GameObject.Find ("dont_death");
+// 			send_point sp = sender.GetComponent<send_point>();
+// 			sp.init ();
+// 			SceneManager.LoadScene ("result", LoadSceneMode.Single);
+// 		}
 
-		}
+		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+  		Debug.DrawRay (ray.origin, ray.direction * 100, Color.red, 3, false);
 	}
 
 	public void end_croutine(){
